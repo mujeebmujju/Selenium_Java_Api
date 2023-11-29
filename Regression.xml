@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<exclude name="Regression"></exclude>
+			<include name="Smoke"></include>	
+			</run>
+	</groups>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="Com.TestNG.DemoTest"/>
+      <class name="Com.TestNG.SampleTest"/>
+      <class name="Com.TestNG.PracticeTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

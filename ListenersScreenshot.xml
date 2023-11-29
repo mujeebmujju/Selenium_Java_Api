@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite thread-count="1" parallel="tests" name="Suite">
+<listeners>
+	<listener class-name="Com.scmflex.GenericUtils.Listeners"></listener>
+	</listeners>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

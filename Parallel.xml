@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite thread-count="2" parallel="tests" name="Suite">
+  <test thread-count="2" parallel="tests" name="Test1">
+	  
+    <classes>
+      <class name="Com.TestNG.SampleTest"/>
+      <class name="Com.TestNG.PracticeTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test thread-count="2" parallel="tests" name="Test2">
+    <classes>
+      <class name="Com.TestNG.DemoTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

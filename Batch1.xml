@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="Automate_Project_Test_Case1.Manufacturer_should_be_able_to_add_products_Test"/>
+      <class name="Automate_Project_Test_Case1.Manufacturer_should_be_able_to_update_stock_and_Admin_can_see_Update_Stock_Test"/>
+      <class name="Automate_Project_Test_Case1.Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_to_see_Edit_product_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

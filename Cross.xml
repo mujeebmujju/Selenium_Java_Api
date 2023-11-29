@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite thread-count="2" parallel="tests" name="Suite">
+  <test name="Test-Runner=1">
+	  <parameter name="BROWSER" value="chrome"></parameter>
+	  <parameter name="URL" value="https://www.google.com"></parameter>    
+	  <classes>
+      <class name="Com.TestNG.DemoTest"/>
+      <class name="Com.TestNG.SampleTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="Test-Runner=2">
+	  <parameter name="BROWSER" value="firefox"></parameter>
+	  	  <parameter name="URL" value="https://www.google.com"></parameter>    
+
+    <classes>
+      <class name="Com.TestNG.DemoTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

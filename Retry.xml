@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite thread-count="1" parallel="tests" name="Suite">
+	<listeners>
+	<listener class-name="Com.scmflex.GenericUtils.IAnnoTrans"></listener>
+	</listeners>
+		
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="Com.TestNG.SampleTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+	
