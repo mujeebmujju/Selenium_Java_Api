@@ -42,8 +42,8 @@ public class Delete_RetailerTest {
 		pobj.setProperty("type","Admin");
 
 
-		FileOutputStream fout=new FileOutputStream(".\\src\\test\\resources\\Common_Data.properties");
-		pobj.store(fout,"write data");
+	//	FileOutputStream fout=new FileOutputStream(".\\src\\test\\resources\\Common_Data.properties");
+		//pobj.store(fout,"write data");
 		//Fetching data from property file
 
 		FileInputStream fin=new FileInputStream(".\\src\\test\\resources\\Common_Data.properties   ");
@@ -95,7 +95,7 @@ public class Delete_RetailerTest {
 		}
 		
 		//read phonenumber from excelfile
-		long phone =(long)sh.getRow(1).getCell(4).getNumericCellValue();
+		long phone =(long) sh.getRow(1).getCell(4).getNumericCellValue();
 		String num=String.valueOf(phone);
 		driver.findElement(By.name("txtRetailerPhone")).sendKeys(num);
 		driver.findElement(By.xpath("//input[@value='Add Retailer']")).click();

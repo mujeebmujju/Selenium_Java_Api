@@ -18,6 +18,9 @@ public class AdminHomePage
 	@FindBy(xpath="//a[.='Retailers']")
 	private WebElement Retailerslink; 
 	
+	@FindBy(xpath = "//input[@value='Log out']")
+	private WebElement LogoutButton;
+	
     
 	//Initialize the WebElement
 
@@ -46,6 +49,12 @@ public class AdminHomePage
     {
 	return Retailerslink;
     }
+    
+    public WebElement getLogoutButton() 
+    {
+	return LogoutButton;
+    }
+    
     
     //Business Logic
     

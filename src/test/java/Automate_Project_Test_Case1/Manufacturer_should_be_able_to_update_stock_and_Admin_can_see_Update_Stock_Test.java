@@ -88,7 +88,7 @@ public class Manufacturer_should_be_able_to_update_stock_and_Admin_can_see_Updat
 
 		// add products
 		// Click On add product Link
-		mHomepage.getProductLink().click();
+		mHomepage.ClickOnaddProductLink();
 
 		String actualaddproducttitle = driver.getTitle();
 		String expectedproductpagetitle = "Add Product";

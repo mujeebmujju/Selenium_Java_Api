@@ -18,7 +18,8 @@ import Com.scmflex.GenericUtils.ExcelUtils;
 import Com.scmflex.GenericUtils.FileUtils;
 import Com.scmflex.GenericUtils.WebDriverUtils;
 
-	public class Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_to_see_Edit_product_Test {
+	public class Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_to_see_Edit_product_Test 
+	{
 		@Test
 		public void test() throws IOException
 

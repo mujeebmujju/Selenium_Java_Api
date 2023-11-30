@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import Com.POM.AddRetailerPage;
 import Com.POM.AdminHomePage;
@@ -13,8 +14,11 @@ import Com.scmflex.GenericUtils.ExcelUtils;
 import Com.scmflex.GenericUtils.FileUtils;
 import Com.scmflex.GenericUtils.WebDriverUtils;
 
-public class DeletingRetailer_Test {
-	public static void main(String[] args) throws InterruptedException, Throwable {
+public class DeletingRetailer_Test 
+{
+	@Test
+	public  void test() throws InterruptedException, Throwable 
+	{
 		
 		FileUtils fileutils= new FileUtils();
 		String AdminUsername =fileutils.readDataFromPropertyFile("Adminusername");

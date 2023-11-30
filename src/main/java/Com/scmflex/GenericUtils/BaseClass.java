@@ -39,6 +39,7 @@ public class BaseClass extends WebDriverUtils
 	@BeforeClass(alwaysRun = true)
 	public void config_BC() throws Throwable
 	{
+		String URL=fLib.readDataFromPropertyFile("url");
 		String BROWSER=fLib.readDataFromPropertyFile("browser");
 	    if (BROWSER.equalsIgnoreCase("chrome"))
 	    {
@@ -58,38 +59,39 @@ public class BaseClass extends WebDriverUtils
 	    
 	    sdriver=driver;
 	    wLib.maximizewindow(driver);
+	    driver.get(URL);
+	    wLib.implicitlyWait(driver, 20);
 	    System.out.println("----browser launched---");
 	}
 	
 	@BeforeMethod(alwaysRun = true)
-	public void config_BM() throws IOException
+	public void config_BM() throws IOException, Throwable
 	{
-		String URL=fLib.readDataFromPropertyFile("url");
+		
 		String USERNAME=fLib.readDataFromPropertyFile("Adminusername");
 		String PASSWORD=fLib.readDataFromPropertyFile("Adminpassword");
 		String LOGINTYPE=fLib.readDataFromPropertyFile("AdminLoginType");
 		
-		driver.get(URL);
-		wLib.implicitlyWait(driver, 20);
+		Thread.sleep(2000);
+		
 		LoginPage Lp=new LoginPage(driver);
 		Lp.EnterUsernameAndPassword(USERNAME,PASSWORD);
 		Lp.EnterLoginType(LOGINTYPE);
-		Lp. ClickOnLoginButton();
+		Lp.ClickOnLoginButton();
 
 	}
 	
 	@AfterMethod(alwaysRun = true)
 	public void config_AM()
 	{
-		
-		ManufacturerHomePage Mhp=new ManufacturerHomePage(driver);
-		Mhp.ClickOnLogoutButton();
+		AdminHomePage Ahp=new AdminHomePage(driver);
+		Ahp.getLogoutButton().click();
 		System.out.println("--logout from application--");
  
 	}
 	
 	@AfterClass()
-	public void config_AC()
+	public void config_AC() 
 	{
 		driver.quit();
 		System.out.println("----browser closed---");

@@ -15,7 +15,8 @@ public class To_check_add_retailers_page_is_displayed_Test extends BaseClass
 {
 
 	//@Test(retryAnalyzer = Com.scmflex.GenericUtils.RetryImpclass.class)---IRetryAnalyzer to call the listener at the class level
-	@Test(retryAnalyzer = Com.scmflex.GenericUtils.RetryImpclass.class)
+	//@Test(retryAnalyzer = Com.scmflex.GenericUtils.RetryImpclass.class)
+	@Test
 	public void test() throws InterruptedException, IOException
 	{
 		AdminHomePage adminhomepage=new AdminHomePage(driver); 
@@ -24,15 +25,16 @@ public class To_check_add_retailers_page_is_displayed_Test extends BaseClass
 		String actualtitle = driver.getTitle();
 		String expectedtitle="Admin: Home";
 		
-		Assert.fail();
-//		if(actualtitle.equals(expectedtitle))
-//		{
+//		Assert.fail();
+		if(actualtitle.equals(expectedtitle))
+		{
 			System.out.println("Homepage is displayed... and its verified with title");
-//		}
-//		else
-//		{
+		}
+		else
+		{
 			System.out.println("Homepage is Not displayed...");
-		//}
+		}
+		
 		// click on addretailer link
 		adminhomepage.getAddRetailerslink().click();
 		
