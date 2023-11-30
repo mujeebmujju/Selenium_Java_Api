@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-30T17:48:52 IST" name="Default suite" finished-at="2023-11-30T17:49:10 IST" duration-ms="18565">
+    <groups>
+    </groups>
+    <test started-at="2023-11-30T17:48:52 IST" name="Default test" finished-at="2023-11-30T17:49:10 IST" duration-ms="18565">
+      <class name="Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test">
+        <test-method is-config="true" signature="config_BS()[pri:0, instance:Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test@7e6f74c]" started-at="2023-11-30T17:48:51 IST" name="config_BS" finished-at="2023-11-30T17:48:52 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BS -->
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test@7e6f74c]" started-at="2023-11-30T17:48:52 IST" name="config_BC" finished-at="2023-11-30T17:49:06 IST" duration-ms="14465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test@7e6f74c]" started-at="2023-11-30T17:49:06 IST" name="config_BM" finished-at="2023-11-30T17:49:09 IST" duration-ms="3214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="test()[pri:0, instance:Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test@7e6f74c]" started-at="2023-11-30T17:49:09 IST" name="test" finished-at="2023-11-30T17:49:10 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test@7e6f74c]" started-at="2023-11-30T17:49:10 IST" name="config_AM" finished-at="2023-11-30T17:49:10 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test@7e6f74c]" started-at="2023-11-30T17:49:10 IST" name="config_AC" finished-at="2023-11-30T17:49:10 IST" duration-ms="377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+        <test-method is-config="true" signature="config_AS()[pri:0, instance:Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test@7e6f74c]" started-at="2023-11-30T17:49:10 IST" name="config_AS" finished-at="2023-11-30T17:49:10 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AS -->
+      </class> <!-- Automate_Project_Test_Case1.To_check_add_retailers_page_is_displayed_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
