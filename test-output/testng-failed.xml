@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Automate_Project_Test_Case1.DeletingRetailer_Test">
+      <class name="string_program.Print_Vowels_With_Duplicate">
         <methods>
-          <include name="test"/>
+          <include name="VowelsDuplicate"/>
         </methods>
-      </class> <!-- Automate_Project_Test_Case1.DeletingRetailer_Test -->
+      </class> <!-- string_program.Print_Vowels_With_Duplicate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,4 +1,4 @@
-package Com.scmflex.GenericUtils;
+  package Com.scmflex.GenericUtils;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -146,8 +146,7 @@ public class WebDriverUtils
 		act1.doubleClick().perform();
 	}
 	
-	
-	
+ 	
 	/**This method will perform right click on webPage
 	 * @param driver
 	 */
@@ -179,7 +178,7 @@ public class WebDriverUtils
 	 * @throws AWTException 
 	 * @throws Throwable
 	 */
-	public void enterKey() throws Throwable
+	public void enterKey( ) throws Throwable
 	{
 		Robot rb=new Robot();
 		rb.keyPress(KeyEvent.VK_ENTER);

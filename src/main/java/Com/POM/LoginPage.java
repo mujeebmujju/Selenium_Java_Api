@@ -21,7 +21,7 @@ public class LoginPage extends WebDriverUtils
 	private WebElement logintypeDropdown;
 	
 	@FindBy(css = "input[type='submit']")
-	private WebElement SubmitButton;
+	private WebElement SubmitButton;  
 	
 	
 	// Initializion of WebElement
@@ -31,7 +31,7 @@ public class LoginPage extends WebDriverUtils
 	}
     
 	// Utiliation of WebElement
-	public WebElement getUsername() 
+	public WebElement getUsername()  
 	{
 		return Username;
 	}
