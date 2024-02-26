@@ -14,6 +14,7 @@ public class IAnnoTrans implements IAnnotationTransformer
 			Class<?> occurringClazz) 
 	{
 		annotation.setRetryAnalyzer(Com.scmflex.GenericUtils.RetryImpclass.class);
+	   
 		
 	}
 	
@@ -21,4 +22,3 @@ public class IAnnoTrans implements IAnnotationTransformer
 }
 
 
-// we use this  

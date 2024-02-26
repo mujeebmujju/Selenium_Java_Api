@@ -39,8 +39,8 @@ public class SearchTest {
 		pobj.setProperty("type","Retailer");
 
 
-		FileOutputStream fout=new FileOutputStream(".\\src\\test\\resources\\Common_Data.properties");
-		pobj.store(fout,"write data");
+//		FileOutputStream fout=new FileOutputStream(".\\src\\test\\resources\\Common_Data.properties");
+//		pobj.store(fout,"write data");
 
 
 		//Fetching data from property file

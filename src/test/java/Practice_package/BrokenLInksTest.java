@@ -16,7 +16,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrokenLInksTest {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException 
+	{
 		
 		//To launch browser
 		WebDriver driver=new ChromeDriver();
@@ -45,7 +46,7 @@ public class BrokenLInksTest {
 			URL url=null;
 			int StatusCode=0;
 			
-			try
+			try 
 			{
 			
 				url=new URL(eachLink);

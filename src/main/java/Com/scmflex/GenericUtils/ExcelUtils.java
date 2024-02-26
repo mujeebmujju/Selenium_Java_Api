@@ -68,7 +68,7 @@ public class ExcelUtils
 		Sheet sh = wb.getSheet(sheetName);
 		sh.createRow(row).createCell(cell).setCellValue(data);
 		FileOutputStream fout=new FileOutputStream("ExcelPath");
-		wb.write(fout);
+		//.write(fout);
 		wb.close();
      
     }
@@ -100,13 +100,13 @@ public class ExcelUtils
     	FileInputStream fi=new FileInputStream(".\\src\\test\\resources\\Excel.xlsx");
   		Workbook wb = WorkbookFactory.create(fi);
   		Sheet sh = wb.getSheet(sheetName);
-  		int rowcount=sh.getPhysicalNumberOfRows();
+  		int rowcount=sh.getLastRowNum();
   		int cellcount=sh.getRow(0).getLastCellNum();
   		
 
 		 Object[][] obj=new Object[rowcount][cellcount];
 		 
-		 for (int i = 0; i <rowcount; i++) 
+		 for (int i = 0; i <=rowcount; i++) 
 		 {
 	 		 for (int j = 0; j <cellcount; j++) 
 	 		 {

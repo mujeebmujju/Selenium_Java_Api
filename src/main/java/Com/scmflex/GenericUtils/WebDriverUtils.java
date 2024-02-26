@@ -1,4 +1,4 @@
-package Com.scmflex.GenericUtils;
+ package Com.scmflex.GenericUtils;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -154,7 +154,7 @@ public class WebDriverUtils
 	public void rightClick(WebDriver driver)
 	{
 		Actions act1 = new Actions(driver);
-		act1.contextClick().perform();
+		act1.contextClick().perform();     
 	}
 	
 	/**This method will perform right click on element
@@ -281,7 +281,7 @@ public class WebDriverUtils
 	public void scrollAction(WebDriver driver ,WebElement element )
 	{
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("arguments[0].scrollIntoView(true);", element);
+		jse.executeScript("arguments[0].scrollIntoView(true);", element);       
 	}
 	
 	

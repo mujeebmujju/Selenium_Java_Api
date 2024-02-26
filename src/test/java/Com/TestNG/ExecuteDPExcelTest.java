@@ -14,11 +14,14 @@ public class ExecuteDPExcelTest
 		}
 		
 		/*
-		 * @DataProvider public Object[][] getdatfromexcel() throws Throwable {
+		 * @DataProvider public Object[][] getdatfromexcel() throws Throwable 
+		 * {
 		 * ExcelUtils elib=new ExcelUtils(); Object[][] value =
-		 * elib.getMultipleSetOfData("Sheet1"); return value; }
+		 * elib.getMultipleSetOfData("Sheet1"); return value; 
+		 * }
 		 */
-	}
+		
+}
 
 
 			

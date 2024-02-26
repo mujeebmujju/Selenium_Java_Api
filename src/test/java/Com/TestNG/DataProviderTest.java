@@ -11,7 +11,7 @@ public class DataProviderTest
 	@DataProvider
 	public Object[][] data() 
 	{
-		Object[][] obj = new Object[2][3]; 
+		Object[][] obj = new Object[3][2]; 
 		
 		
 		obj[0][0]="Bangalore";

@@ -32,7 +32,7 @@ public class Write_Data_Into_Properties_Filetest
 		
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(URL);
+		driver.get(URL); 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys(USERNAME);
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys(PASSWORD);

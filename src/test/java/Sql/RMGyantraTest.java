@@ -8,8 +8,9 @@ import java.sql.Statement;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import com.mysql.cj.jdbc.Driver;
@@ -20,7 +21,7 @@ public class RMGyantraTest
 
 public static void main(String[] args) throws SQLException, InterruptedException
 {
-	EdgeDriver driver=new EdgeDriver();
+	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	Thread.sleep(1000);
 	
