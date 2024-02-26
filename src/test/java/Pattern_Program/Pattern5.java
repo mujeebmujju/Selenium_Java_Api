@@ -12,7 +12,7 @@ public class Pattern5
 		{                                            // 2 2
 			for(int j=1; j<=i; j++)                  // 3 3 3
 			{                                        // 4 4 4 4
-				System.out.print(i+" ");             // 5 5 5 5
+				System.out.print(i+" ");             // 5 5 5 5 5
 			}
 			System.out.println();
 		}

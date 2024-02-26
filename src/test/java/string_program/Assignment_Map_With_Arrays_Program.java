@@ -7,38 +7,6 @@ import org.testng.annotations.Test;
 
 public class Assignment_Map_With_Arrays_Program 
 {
-	@Test
-
-	public void UniqueNumber() 
-	{
-		int a[]= {5,4,4,2,5,4,2,1};
-		HashMap<Integer, Integer> map=new HashMap<Integer, Integer> ();
-
-		for (int i = 0; i < a.length; i++) 
-		{
-			if(map.containsKey(a[i])) 
-			{
-				map.put(a[i],map.get(a[i])+1);
-
-			}
-			else
-			{
-				map.put(a[i],1);
-			}
-
-		}
-		
-		System.out.println("Only uniques Number");
-		for(Entry<Integer, Integer>m:map.entrySet())
-		{
-			if(m.getValue()==1) 
-			{
-				System.out.println(m.getKey()+"  "+m.getValue());
-			}
-		}
-	}
-	
-	
 	
 @Test
 public void OccurenceofEachNumber() 
@@ -65,7 +33,7 @@ public void OccurenceofEachNumber()
 	{
 		if(m.getValue()>=1) 
 		{
-			System.out.println(m.getKey()+"  "+m.getValue());
+			System.out.println(m.getKey()+"="+m.getValue());
 		}
 	}
 }
@@ -97,7 +65,7 @@ public void OnlyDuplicateNum()
 	{
 		if(m.getValue()>1) 
 		{
-			System.out.println(m.getKey()+"  "+m.getValue());
+			System.out.println(m.getKey()+"="+m.getValue());
 		}
 	}
 } 
@@ -105,7 +73,7 @@ public void OnlyDuplicateNum()
 
 @Test
 
-public void RemoveDuplicates() 
+public void RemoveDuplicatesORUNIQUE() 
 {
 	int a[]= {5,4,4,2,5,4,2,1};
 	HashMap<Integer, Integer> map=new HashMap<Integer, Integer> ();
@@ -130,7 +98,7 @@ public void RemoveDuplicates()
 	      
 	    if(m.getValue()==1) 
 	    {
-			System.out.println(m.getKey()+"  "+m.getValue());
+			System.out.println(m.getKey()+"="+m.getValue());
 		}
 	
 }

@@ -10,7 +10,7 @@ public class Treemap1_Test
 	@Test
 	public void test()
 		 	{
-	//	TreeMap<K, V> map = new TreeMap<K, V>();
+	//TreeMap<K, V> map = new TreeMap<K, V>();
 		
 		 	}
 		 	   

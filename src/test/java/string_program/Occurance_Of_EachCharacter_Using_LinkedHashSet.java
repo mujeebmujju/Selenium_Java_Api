@@ -29,7 +29,7 @@ public class Occurance_Of_EachCharacter_Using_LinkedHashSet
 				}
 			}
 			
-			if(count>=1)
+			if(count>1)
 			{
 			System.out.println(ch+" "+count);
 			}

@@ -8,13 +8,12 @@ public class String_Imp2
 	public void test()
 	{
 		String s="I LOVE TYSS";
-		String s1=s.replaceAll(" ","");
-		String rev="";
+		String s1=s.replaceAll(" ","");  // ILOVETYSS
 		int count=s1.length()-1;
 		for(int i=0; i<s.length(); i++)
 		{
 			if(s.charAt(i)!=' ')
-			{
+			{ 
 				System.out.print(s1.charAt(count--));
 			}
 			else
@@ -23,6 +22,77 @@ public class String_Imp2
 			}
 		}
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  

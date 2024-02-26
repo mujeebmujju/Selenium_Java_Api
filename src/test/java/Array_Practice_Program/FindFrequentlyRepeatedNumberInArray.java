@@ -11,7 +11,7 @@ public class FindFrequentlyRepeatedNumberInArray
 	{
 		int[]a= {1,2,4,2,6,2,8,10,2};
 		int max=0;
-		int value=0;
+		int value=0;    
 
 		for(int i=0; i<a.length; i++)
 		{

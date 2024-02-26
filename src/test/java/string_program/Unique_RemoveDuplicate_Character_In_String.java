@@ -9,34 +9,34 @@ public class Unique_RemoveDuplicate_Character_In_String
 	{
 		String s1="Tester";
 		String s = s1.toLowerCase();
-		
+
 		for(int i=0; i<s.length(); i++)
 		{
 			int count=0;
-	     	for(int j=0; j<s.length(); j++)
-		{
-			if(s.charAt(i)==s.charAt(j))
+			for(int j=0; j<s.length(); j++)
 			{
-				if(i>j)
+				if(s.charAt(i)==s.charAt(j))
 				{
-					break;
-				} 
-				
-				else
-				{
-					count++;
+					if(i>j)
+					{
+						break;
+					} 
+
+					else
+					{
+						count++;
+					}
 				}
 			}
-		}
-			
+
 			if(count==1)
 			{
-				System.out.println(s.charAt(i)+"="+count);
+				System.out.print(s.charAt(i)+"="+count+" "+"");
 
-			}
+			} 
 
 		}
-	}
+	}    
 
-	}
+}
 

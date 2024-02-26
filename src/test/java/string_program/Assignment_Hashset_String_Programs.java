@@ -1,10 +1,10 @@
 package string_program;
 import java.util.LinkedHashSet;
 import org.testng.annotations.Test;
-public class Assignment_Collection_Srting_Programs 
+public class Assignment_Hashset_String_Programs 
 {
 	@Test
-	public void RevomeRepeatedWordsInTheString() 
+	public void RevomeRepeatedWordsORUNIQUEInTheString() 
 	{
 		String s="hi hello hi hello welcome";
 		String[] str = s.split(" ");
@@ -21,7 +21,7 @@ public class Assignment_Collection_Srting_Programs
 			int count=0;
 			for(int  i=0;i<str.length;i++) 
 			{
-				if(word==(str[i])) 
+				if(word.equals(str[i]))    
 				{
 					count++;
 				}
@@ -34,18 +34,17 @@ public class Assignment_Collection_Srting_Programs
 		}
 	}
 
-	@Test
-	public void UniqueWords() 
-	{
-		String s="hi hello hi hello welcome";
-		String[] str = s.split(" ");
-		LinkedHashSet<String> set=new LinkedHashSet<String>();
 
+	@Test
+	public void OnlyDuplicatesWords() {
+		String s="hi hello hi hello welcome";
+		LinkedHashSet<String> set=new LinkedHashSet<String>();
+		String[] str = s.split(" ");
 		for (int i = 0; i < str.length; i++) 
 		{
 			set.add(str[i]);	
 		}
-		System.out.println("Only uniques words");
+		System.out.println("Only duplicates words");
 		for (String word :set) 
 		{
 			int count=0;
@@ -56,30 +55,8 @@ public class Assignment_Collection_Srting_Programs
 					count++;
 				}
 			}
-			if(count==1)
+			if(count>1) 
 			{
-				System.out.println(word+"===>"+count);
-			}
-		}
-	}
-
-	@Test
-	public void OnlyDuplicatesWords() {
-		String s="hi hello hi hello welcome";
-		LinkedHashSet<String> set=new LinkedHashSet<String>();
-		String[] str = s.split(" ");
-		for (int i = 0; i < str.length; i++) {
-			set.add(str[i]);	
-		}
-		System.out.println("Only duplicates words");
-		for (String word :set) {
-			int count=0;
-			for(int  i=0;i<str.length;i++) {
-				if(word.equals(str[i])) {
-					count++;
-				}
-			}
-			if(count>1) {
 				System.out.println(word+"   "+count);
 			}
 		}
@@ -88,7 +65,7 @@ public class Assignment_Collection_Srting_Programs
 	@Test
 	public void OrderofOccurenceofEachWords() 
 	{
-		String s="hi hello hi hello welcome";
+		String s="hi hello hi hello welcome";  
 		String[] str = s.split(" ");
 		LinkedHashSet<String> set=new LinkedHashSet<String>();
 
@@ -97,12 +74,12 @@ public class Assignment_Collection_Srting_Programs
 			set.add(str[i]);	
 		}
 		System.out.println("Order of Occurence of Each Word");
-		for (String word :set) 
+		for (String word:set) 
 		{
 			int count=0;
 			for(int  i=0;i<str.length;i++) 
 			{
-				if(word.equals(str[i])) 
+				if(word.equals(str[i]))    
 				{
 					count++;
 				}

@@ -7,7 +7,7 @@ public class MaximumNumber_InArray
 	@Test
 	public void Maximum()
 	{
-		int[]a= {0,5,55,58,23,14,};
+		int[]a= {0,5,55,58,23,14};
 		
 		for(int i=0; i<a.length;i++)
 		{

@@ -26,7 +26,7 @@ public class Occurance_Of_EachCharacter_Using_HashMap
 	    		map.put(s1.charAt(i), 1);
 	    	}
 	    }
-	    for(Entry<Character, Integer> m:map.entrySet())
+	    for(Entry<Character, Integer> m:map.entrySet()) 
 	    {
 	    	if(m.getValue()>=1)
 	    	{

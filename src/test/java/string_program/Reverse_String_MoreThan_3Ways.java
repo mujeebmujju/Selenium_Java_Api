@@ -13,7 +13,7 @@ public class Reverse_String_MoreThan_3Ways
 		String s="Mujeeb";
 		for(int i=s.length()-1;i>=0; i--)
 		{
-			System.out.println(s.charAt(i));
+			System.out.print(s.charAt(i));
 		}
 	}
 		
@@ -26,7 +26,7 @@ public class Reverse_String_MoreThan_3Ways
 		char[] ch = s.toCharArray();
 		for(int i=ch.length-1; i>=0; i--)
 		{
-			System.out.println(ch[i]);
+			System.out.print(ch[i]);
 		}
 
     }

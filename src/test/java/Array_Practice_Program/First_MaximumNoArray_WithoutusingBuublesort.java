@@ -11,7 +11,6 @@ public class First_MaximumNoArray_WithoutusingBuublesort
 		int max=a[0];
 		
 		for(int i=0; i<a.length;i++)
-			
 
 		{
 			if(max<a[i]) 
@@ -20,6 +19,5 @@ public class First_MaximumNoArray_WithoutusingBuublesort
 			}
 		}
 		System.out.println(max);
-	}
-
+	} 
 }

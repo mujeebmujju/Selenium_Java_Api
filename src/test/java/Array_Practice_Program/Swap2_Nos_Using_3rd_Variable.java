@@ -15,7 +15,7 @@ public class Swap2_Nos_Using_3rd_Variable
 		a=b;
 		b=c;
 		System.out.println(a);
-		System.err.println(b);
+		System.out.println(b);
 	}
 }
 	

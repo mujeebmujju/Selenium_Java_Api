@@ -28,7 +28,8 @@ public class Assignment_Map_String_Program
 			
 		}
 		System.out.println("Only uniques words");
-		for(Entry<String, Integer>m:map.entrySet()) 
+		
+		for(Entry<String, Integer>m:map.entrySet())
 		{
 			if(m.getValue()==1) 
 			{
@@ -103,36 +104,5 @@ public class Assignment_Map_String_Program
 		}
 	}
 	
-	
-	@Test
-	public void RevomeDuplicates() 
-	{
-		String s="hi hello hi hello welcome";
-		String[] str = s.split(" ");
-		HashMap<String, Integer> map=new HashMap<String, Integer> ();
-
-		for (int i = 0; i < str.length; i++) 
-		{
-			if(map.containsKey(str[i]))
-			{
-				map.put(str[i],map.get(str[i])+1);
-				
-			}
-			else
-			{
-				map.put(str[i],1);
-			}
-			
-		}
-		
-		System.out.println("revome Dupicates");
-		for(Entry<String, Integer>m:map.entrySet()) 
-		{
-			if(m.getValue()==1) 
-			{
-				System.out.println(m.getKey()+"   "+m.getValue());
-			}
-		}
-	}
-
 }
+	

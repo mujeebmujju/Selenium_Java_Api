@@ -21,9 +21,10 @@ public class Array_Descending_bubbleSort
 				}
 					
 			}
-			System.out.println(a[i]);
+			System.out.print(a[i]+" ");
 		}
 		
 	}
 
+	
 }

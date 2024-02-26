@@ -1,35 +1,11 @@
 package string_program;
 import java.util.LinkedHashSet;
 import org.testng.annotations.Test;
-public class Assignment_Collection_Arrays_Prgm
+public class Assignment_Hashset_Arrays_Prgm
 {
-	@Test
-	public void RemoveRepeatedNumbersIngivenArrays() 
-	{
-		int a[]= {5,4,4,2,5,4,2,1};
-		LinkedHashSet<Integer> set=new LinkedHashSet<Integer>();
 
-		for (int i = 0; i < a.length; i++) 
-		{
-			set.add(a[i]);	
-		}
-		System.out.println("revome repeated numbers in the given array");
-		for (Integer num :set) 
-		{
-			int count=0;
-			for(int  i=0;i<a.length;i++) 
-			{
-				if(num==a[i]) 
-				{
-					count++;
-				}
-			}
-			System.out.println(num+"   "+count);
-		}
-	}
-	
 	@Test
-	public void Uniquenumber() 
+	public void RemoveRepeatedNumbers_OR_Uniquenumber() 
 	{
 		int a[]= {5,4,4,2,5,4,2,1};
 		LinkedHashSet<Integer> set=new LinkedHashSet<Integer>();
@@ -38,7 +14,8 @@ public class Assignment_Collection_Arrays_Prgm
 			set.add(a[i]);	
 		}
 		System.out.println("unique numbers");
-		for (Integer num :set) {
+		for (Integer num :set)
+		{
 			int count=0;
 			for(int  i=0;i<a.length;i++) 
 			{
@@ -49,7 +26,7 @@ public class Assignment_Collection_Arrays_Prgm
 			}
 			if(count==1)
 			{
-				System.out.println(num+"   "+count);
+				System.out.println(num+"="+count);
 			}
 		}
 	}
@@ -59,19 +36,24 @@ public class Assignment_Collection_Arrays_Prgm
 		int a[]= {5,4,4,2,5,4,2,1};
 		LinkedHashSet<Integer> set=new LinkedHashSet<Integer>();
 
-		for (int i = 0; i < a.length; i++) {
+		for (int i = 0; i < a.length; i++) 
+		{
 			set.add(a[i]);	
 		}
 		System.out.println("Only Duplicates number");
-		for (Integer num :set) {
+		for (Integer num :set) 
+		{
 			int count=0;
-			for(int  i=0;i<a.length;i++) {
-				if(num==a[i]) {
+			for(int  i=0;i<a.length;i++) 
+			{
+				if(num==a[i]) 
+				{
 					count++;
 				}
 			}
-			if(count>1) {
-				System.out.println(num+"  "+count);
+			if(count>1)
+			{
+				System.out.println(num+"="+count);
 			}
 		}
 	}
@@ -85,7 +67,7 @@ public class Assignment_Collection_Arrays_Prgm
 		{
 			set.add(a[i]);	
 		}
-		System.out.println("Order of Each Number In the Array");
+		System.out.println("Occurance of Each Number In the Array");
 		for (Integer num :set) 
 		{
 			int count=0;
@@ -98,7 +80,7 @@ public class Assignment_Collection_Arrays_Prgm
 			}
 			if(count>=1) 
 			{
-				System.out.println(num+"   "+count+" times");
+				System.out.println(num+"="+count+" times");
 			}
 		}
 	}

@@ -10,12 +10,12 @@ public class Swap2Nos_WithoutUsing_3rdVariable
 	{
 		int a=80;
 		int b=40;
-		System.out.println("Before swapping a=" +a +"  "+ "b="+b);
+		System.out.println("Before swapping a="+a +"  "+ "b="+b);
 
 		a=a+b;
 		b=a-b;
 		a=a-b;
-		System.out.println("After swapping a=" +a +"  "+ "b ="+b);
+		System.out.println("After swapping a="+a +"  "+ "b ="+b);
 
 
 	}

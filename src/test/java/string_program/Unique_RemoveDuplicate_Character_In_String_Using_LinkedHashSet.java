@@ -1,4 +1,4 @@
-package string_program;
+ package string_program;
 
 import java.util.LinkedHashSet;
 
@@ -32,7 +32,7 @@ public class Unique_RemoveDuplicate_Character_In_String_Using_LinkedHashSet
 			
 			if(count==1)
 			{
-			System.out.println(ch+" "+count);
+			System.out.println(ch+"="+count);
 			}
 
 		}

@@ -1,4 +1,4 @@
-// SORT AN ARRAY IN ASCENDING ORDER USING BUBBLE SORT
+ // SORT AN ARRAY IN ASCENDING ORDER USING BUBBLE SORT
 
 package Array_Practice_Program;  
 import org.testng.annotations.Test;
@@ -22,9 +22,10 @@ public class Array_Ascending_bubbleSort
 				}
 					
 			}
-			System.out.println(a[i]);
+			System.out.print(a[i]+" ");
 		}
 		
 	}
+
 
 }

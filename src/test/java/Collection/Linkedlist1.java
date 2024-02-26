@@ -24,10 +24,7 @@ public class Linkedlist1
         list.removeFirst();
         list.removeLast();
 		System.out.println(list);
-		
-		
-
-		  
+	
 	    for(Object obj:list)	    
 	    {
 	    	System.out.println(obj);
